@@ -1,0 +1,22 @@
+{
+  "name": "kongyo-skill-creator",
+  "owner": {
+    "name": "kongyo2",
+    "email": ""
+  },
+  "metadata": {
+    "description": "kongyo式のスキル作成",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kongyo-skill-creator",
+      "description": "kongyo式のスキル作成",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./kongyo-skill-creator"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: kongyo-skill-creator
-description: "Create or refactor a Codex/Claude skill into kongyo-style operational documentation: explicit trigger text, first-screen quickstart, decision tables, copy-paste templates, pitfalls, troubleshooting, and a clean split between SKILL.md, references/, and assets/. Use when authoring a new skill, rewriting an explanation-heavy skill into an executable runbook, standardizing team skill structure, or reviewing whether a skill is practical enough to run without guesswork."
+description: "Create or refactor a skill into kongyo-style operational documentation: explicit trigger text, first-screen quickstart, decision tables, copy-paste templates, pitfalls, troubleshooting, and a clean split between SKILL.md, references/, and assets/. Use when authoring a new skill, rewriting an explanation-heavy skill into an executable runbook, standardizing team skill structure, or reviewing whether a skill is practical enough to run without guesswork."
 ---
 
 # Kongyo Skill Creator
