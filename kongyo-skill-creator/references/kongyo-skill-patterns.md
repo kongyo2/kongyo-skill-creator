@@ -2,10 +2,11 @@
 
 ## まず押さえる共通項
 
-- `description` が具体的で、`What + Use when ...` まで入っている
+- `description` が trigger-only で、`Use when ...` から具体的な task / symptom / decision point が分かる
 - body は背景説明より先に「何をすると動くか」を出す
 - table を比較だけでなく分岐にも使う
 - `落とし穴` が明示的で、精神論ではなく回避操作がある
+- 新規・大幅変更では、実際に使う scenario と pass condition を持つ
 - `関連` は飾りではなく、次に読むべき skill に絞られている
 - 長くなる知識は `references/`、コピーしたい素材は `assets/` に逃がす
 
@@ -117,6 +118,8 @@ section例:
 
 - 章ごとに同じ見出しを機械的に並べること
 - 理屈だけで quickstart が無いこと
+- `description` に手順や workflow を詰め込み、本文を読まなくても動けるようにすること
+- 検証 scenario なしに「明らかに分かる」と判断すること
 - `references/` に逃がしたのに入口が書かれていないこと
 - 落とし穴が `気をつける` で終わること
 - archetype を混ぜすぎて section 順が作業順を外すこと

@@ -4,22 +4,23 @@
 
 ## Scoring
 
-各軸を 0-2 点で採点する。合計 16 点満点。
+各軸を 0-2 点で採点する。合計 18 点満点。
 
 | 軸 | 0 | 1 | 2 |
 |---|---|---|---|
-| Trigger clarity | `description` が曖昧で trigger しない | what か when の片方だけある | what + when + 具体的な task / symptom がある |
+| Trigger clarity | `description` が曖昧で trigger しない | trigger はあるが抽象的、または workflow 要約が混ざる | `Use when...` で具体的な task / symptom / decision point がある |
 | First-screen success path | 先頭に操作が無い | 使いどころはあるが動き出しが遅い | 1 画面目で最短成功パスに入れる |
 | Inputs / prerequisites | 必要環境が不明 | 一部だけ書いてある | 必要入力、前提、対象範囲が見える |
 | Decision support | 分岐が暗黙 | 箇条書きで説明だけある | table か `if ... then ...` で分岐が固定されている |
-| Copy-paste assets | そのまま使える素材が無い | 一部だけコピペできる | コマンド / prompt / file template をそのまま使える |
+| Copy-paste assets | そのまま使える素材が無い | 一部だけコピペできる | コマンド / prompt / file template をそのまま使え、nested fence でも Markdown が崩れない |
 | Failure handling | 落とし穴が無い | 注意はあるが抽象的 | `症状 -> 原因 -> 打ち手` まである |
 | Progressive disclosure | 本文が重い or deep detail が欠落 | 分離しているが入口が弱い | `SKILL.md` は薄く、`references/` と `assets/` への導線がある |
 | Fidelity | 具体例が想像だけ | 一部は具体例だが検証弱い | 実際の command / file / output に近い |
+| Validation readiness | 検証方法が無い | static review だけ、または scenario が抽象的 | skill 種別に合う scenario と pass condition がある |
 
 ## Pass Criteria
 
-- 合計 12/16 以上
+- 合計 14/18 以上
 - 次の 4 軸で 0 点を出さない
   - `Trigger clarity`
   - `First-screen success path`
@@ -56,8 +57,10 @@ archetype ごとに最低 1 つ足りないと弱い section がある。
 
 ## Final Ship Checklist
 
-- frontmatter の `description` を単独で読んでも trigger 条件が分かる
+- frontmatter の `description` は trigger-only で、単独で読んでも起動条件が分かる
 - 先頭 1 画面に `いつ使うか` と最短成功パスがある
 - placeholder に置換ルールがある
+- fenced code block を含むテンプレートは外側 fence を 4 backticks 以上にしている
 - `references/` と `assets/` を使った場合、`SKILL.md` から直接読みに行ける
 - 落とし穴が 3 件以上あるか、同等の troubleshooting がある
+- 新規、大幅変更、discipline-enforcing skill では検証シナリオか検証結果がある
